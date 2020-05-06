@@ -11,3 +11,4 @@ Johnny Massey - Writing/Game Design
 Spencer Smallbridge - Sound Design  
 William Zhang - Lead Tech/Game Design  
 Andy Nguyen - Game Design  
+Agon Haxhiavdija - Game Desgin  
