@@ -4,7 +4,7 @@ Welcome to the Boing git page.
 
 Made by:
 
-Angus Angell - Director/Game Design/
+Angus Angell - Director/Game Design
 Danielle Rozali - Art/Writing  
 Geneva Poon - Art/Animation  
 Johnny Massey - Writing/Game Design  
