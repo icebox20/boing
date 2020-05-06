@@ -1,0 +1,79 @@
+name: Merge
+
+on:
+  push:
+    branches: 
+      - william
+      - andy
+      - angus
+      - johnny
+      - agon
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        ref: master
+
+    - name: Install UnityYAMLMerge
+      run: |
+        git config --local merge.tool unityyamlmerge
+        git config --local mergetool.unityyamlmerge.trustExitCode true
+        git config --local mergetool.unityyamlmerge.cmd "'${{ github.workspace }}\.github\workflows\UnityYAMLMerge.exe'  merge -l -o ${{ github.workspace }}\mergeConflicts.txt --describe -h `"`$BASE`" `"`$REMOTE`" `"`$LOCAL`" `"`$MERGED"
+    
+    - uses: oleksiyrudenko/gha-git-credentials@v1
+      with:
+        token: '${{ secrets.GITHUB_TOKEN }}'
+        
+    - name: Fetch and Checkout
+      run: |
+        git fetch 
+        git checkout ${GITHUB_REF##*/}
+        git checkout develop
+      shell: bash
+
+    - name: Normal Merge
+      run: |
+        git merge ${{ github.ref }}
+        git status
+
+    - name: YAML Merge
+      run: git mergetool --tool=unityyamlmerge --no-prompt
+
+    - name: Commit
+      run: |
+        git commit -m "Automatic Merge with UnityYAMLMerge"
+        git status
+        ls ${{ github.workspace }}
+
+    - name: Upload Artifacts
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v1
+      with:
+          name: mergeConflicts
+          path: mergeConflicts.txt
+
+    - name: Push Develop
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'develop'
+
+    - name: Merge back into User
+      run: |
+        git fetch 
+        git checkout ${GITHUB_REF##*/}
+        git merge develop -X theirs
+      shell: bash
+
+    - name: Push User
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
