@@ -19,6 +19,8 @@ prefab use "%programs%\YouFallbackMergeToolForPrefabsHere.exe" "%l" "%r" "%b" "%
 # Default fallbacks for unknown files. First tool found is used.
 #
 
+* use "D:\a\boing\boing\.github\workflows\merge.bat" "%r" "%d"
+
 # Apple File Merge
 * use "/usr/bin/opendiff" %r %l -ancestor %b -merge %d
 
