@@ -25,7 +25,7 @@ jobs:
       run: |
         git config --local merge.tool unityyamlmerge
         git config --local mergetool.unityyamlmerge.trustExitCode true
-        git config --local mergetool.unityyamlmerge.cmd "'${{ github.workspace }}\.github\workflows\UnityYAMLMerge.exe'  merge -p -o ${{ github.workspace }}\mergeConflicts.txt --describe -h `"`$BASE`" `"`$REMOTE`" `"`$LOCAL`" `"`$MERGED"
+        git config --local mergetool.unityyamlmerge.cmd "'${{ github.workspace }}\.github\workflows\UnityYAMLMerge.exe'  merge -p -o mergeConflicts.txt --describe -h `"`$BASE`" `"`$REMOTE`" `"`$LOCAL`" `"`$MERGED"
     
     - uses: oleksiyrudenko/gha-git-credentials@v1
       with:
