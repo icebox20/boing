@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public string newGameScene;
+    public string SampleScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     public void Play(){
-      SceneManager.LoadScene(newGameScene);
+      SceneManager.LoadScene(SampleScene);
     }
     public void Exit(){
       Application.Quit();
