@@ -8,6 +8,7 @@ public class playerRunImproved : MonoBehaviour
 
 
     private Rigidbody2D physicsThingy;
+    private Animator characterAnimator;
     public float acceleration = 5;
     public float speedCap = 8;
     private float flatVelocity = 0;

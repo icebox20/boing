@@ -8,6 +8,7 @@ public class playerJumpImproved : MonoBehaviour
 
 
     private Rigidbody2D physicsThingy;
+    private Animator characterAnimator;
     private bool isJumpKeyDown = false;
     public float jumpMagnitude = 5;
     public float groundLeniency = 1;
@@ -15,6 +16,7 @@ public class playerJumpImproved : MonoBehaviour
     void Start()
     {
         physicsThingy = GetComponent<Rigidbody2D>();
+        characterAnimator = GetComponent<Animator>();
 
     }
 
@@ -32,7 +34,7 @@ public class playerJumpImproved : MonoBehaviour
 
         RaycastHit2D ground = Physics2D.Raycast(this.gameObject.transform.position, -Vector2.up);
 
-
+        characterAnimator.SetBool("IsJumping", false);
 
         if (ground.collider != null)
         {
@@ -50,6 +52,8 @@ public class playerJumpImproved : MonoBehaviour
 
 
                         physicsThingy.velocity = new Vector2(flatVelocity, jumpMagnitude);
+
+                        characterAnimator.SetBool("IsJumping", true);
 
 
                     }
