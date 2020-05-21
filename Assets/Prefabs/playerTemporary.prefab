@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpMagnitude: 18
-  groundLeniency: 0.42
+  groundLeniency: 1
 --- !u!114 &8510702222787978530
 MonoBehaviour:
   m_ObjectHideFlags: 0
