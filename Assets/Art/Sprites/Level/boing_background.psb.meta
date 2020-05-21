@@ -1,0 +1,709 @@
+fileFormatVersion: 2
+guid: 9f9163f9420b38d46b4c162e8c39033c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: stars
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 12646
+      width: 7042
+      height: 1478
+    spriteID: d4b8b2aa6e0a10149a19fb4954433d37
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -267, y: 5606}
+  - name: catus 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7054
+      y: 12646
+      width: 303
+      height: 596
+    spriteID: 209fa6030b4565a47a8155827045a3be
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -160, y: 11854}
+  - name: Foreground
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7692
+      y: 4
+      width: 3840
+      height: 1059
+    spriteID: 1870869e81bed9c47bcfd7f517dc8886
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3852, y: 4}
+  - name: Land
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 11169
+      width: 7680
+      height: 1469
+    spriteID: 636cc82c5eef71441a3e739bfba4268f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 11169}
+  - name: catus 2_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7054
+      y: 13250
+      width: 219
+      height: 600
+    spriteID: 5dc3d785a026ff64f83800a154c8ab83
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5157, y: 12292}
+  - name: clouds 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 15129
+      width: 6190
+      height: 1081
+    spriteID: ec81bcdc2a24a6c4a91b67a2e22b9756
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1020, y: 10670}
+  - name: catus
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7064
+      y: 14132
+      width: 410
+      height: 658
+    spriteID: 1039c25b453842e4dacbb2bc3cc1ea5e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2888, y: 13073}
+  - name: Birds
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 14132
+      width: 7052
+      height: 989
+    spriteID: 0c74d29d53d497043a258d301e7812ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -317, y: 12045}
+  - name: Mountain
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 8652
+      width: 6720
+      height: 2509
+    spriteID: eddb681d8f1c5e4449212f44d073268c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -884, y: 8652}
+  - name: Sky
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 7680
+      height: 8640
+    spriteID: 4b62e4258a0130a48b928844a0c260df
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  rigSpriteImportData:
+  - name: stars
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 12646
+      width: 7042
+      height: 1478
+    spriteID: 1ad6a7ba6c6324941beccea36ee0a855
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -267, y: 5606}
+  - name: catus 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7054
+      y: 12646
+      width: 303
+      height: 596
+    spriteID: 45182c75b0b0589458a7c2030000ccab
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -160, y: 11854}
+  - name: Foreground
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 14132
+      width: 3840
+      height: 1059
+    spriteID: d8efeb6033925d7458c5e1bc0bc1446f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 14132}
+  - name: Land
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 11169
+      width: 7680
+      height: 1469
+    spriteID: fa311bdfa3c3a2044898a7c07eee55de
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 11169}
+  - name: catus 2_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7054
+      y: 13250
+      width: 219
+      height: 600
+    spriteID: 27b2a71e4531dbd4486c6928cac0c1fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5157, y: 12292}
+  - name: clouds 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7692
+      y: 4
+      width: 6190
+      height: 1081
+    spriteID: 29ec00e34d0d0ef428d1bb8742b71c65
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6668, y: -4455}
+  - name: catus
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7064
+      y: 15199
+      width: 410
+      height: 658
+    spriteID: 783a2ff82344ac54d8fd23968b42ee6b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2888, y: 14140}
+  - name: Birds
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 15199
+      width: 7052
+      height: 989
+    spriteID: de7b7c2b41d2ea24d9874c7fb2d387aa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -317, y: 13112}
+  - name: Mountain
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 8652
+      width: 6720
+      height: 2509
+    spriteID: f7993b5971a7e0241aca49a5550bdc0a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -884, y: 8652}
+  - name: Sky
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 7680
+      height: 8640
+    spriteID: c65afc63a5fa6c246a2861d55abb4971
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 8192
+  importedTextureHeight: 8192
+  documentSize: {x: 7680, y: 8640}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 16384
+  textureActualHeight: 16384
+  spritePackingTag: 
+  resliceFromLayer: 1
+  characterMode: 1
+  mosaicPSDLayers:
+  - name: stars
+    spriteName: stars
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4b8b2aa6e0a10149a19fb4954433d37
+    layerID: 16
+    mosaicPosition: {x: 4, y: 12646}
+  - name: catus 2
+    spriteName: catus 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 209fa6030b4565a47a8155827045a3be
+    layerID: 13
+    mosaicPosition: {x: 7054, y: 12646}
+  - name: Foreground
+    spriteName: Foreground
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1870869e81bed9c47bcfd7f517dc8886
+    layerID: 11
+    mosaicPosition: {x: 7692, y: 4}
+  - name: Land
+    spriteName: Land
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 636cc82c5eef71441a3e739bfba4268f
+    layerID: 6
+    mosaicPosition: {x: 4, y: 11169}
+  - name: catus 2
+    spriteName: catus 2_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5dc3d785a026ff64f83800a154c8ab83
+    layerID: 18
+    mosaicPosition: {x: 7054, y: 13250}
+  - name: clouds 2
+    spriteName: clouds 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ec81bcdc2a24a6c4a91b67a2e22b9756
+    layerID: 15
+    mosaicPosition: {x: 4, y: 15129}
+  - name: catus
+    spriteName: catus
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1039c25b453842e4dacbb2bc3cc1ea5e
+    layerID: 12
+    mosaicPosition: {x: 7064, y: 14132}
+  - name: Birds
+    spriteName: Birds
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c74d29d53d497043a258d301e7812ec
+    layerID: 19
+    mosaicPosition: {x: 4, y: 14132}
+  - name: Mountain
+    spriteName: Mountain
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eddb681d8f1c5e4449212f44d073268c
+    layerID: 8
+    mosaicPosition: {x: 4, y: 8652}
+  - name: Sky
+    spriteName: Sky
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b62e4258a0130a48b928844a0c260df
+    layerID: 17
+    mosaicPosition: {x: 4, y: 4}
+  rigPSDLayers:
+  - name: stars
+    spriteName: stars
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1ad6a7ba6c6324941beccea36ee0a855
+    layerID: 16
+    mosaicPosition: {x: 4, y: 12646}
+  - name: catus 2
+    spriteName: catus 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 45182c75b0b0589458a7c2030000ccab
+    layerID: 13
+    mosaicPosition: {x: 7054, y: 12646}
+  - name: Foreground
+    spriteName: Foreground
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d8efeb6033925d7458c5e1bc0bc1446f
+    layerID: 11
+    mosaicPosition: {x: 4, y: 14132}
+  - name: Land
+    spriteName: Land
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fa311bdfa3c3a2044898a7c07eee55de
+    layerID: 6
+    mosaicPosition: {x: 4, y: 11169}
+  - name: catus 2
+    spriteName: catus 2_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 27b2a71e4531dbd4486c6928cac0c1fb
+    layerID: 18
+    mosaicPosition: {x: 7054, y: 13250}
+  - name: clouds 2
+    spriteName: clouds 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 29ec00e34d0d0ef428d1bb8742b71c65
+    layerID: 15
+    mosaicPosition: {x: 7692, y: 4}
+  - name: catus
+    spriteName: catus
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 783a2ff82344ac54d8fd23968b42ee6b
+    layerID: 12
+    mosaicPosition: {x: 7064, y: 15199}
+  - name: Birds
+    spriteName: Birds
+    isGroup: 0
+    parentIndex: -1
+    spriteID: de7b7c2b41d2ea24d9874c7fb2d387aa
+    layerID: 19
+    mosaicPosition: {x: 4, y: 15199}
+  - name: Mountain
+    spriteName: Mountain
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f7993b5971a7e0241aca49a5550bdc0a
+    layerID: 8
+    mosaicPosition: {x: 4, y: 8652}
+  - name: Sky
+    spriteName: Sky
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c65afc63a5fa6c246a2861d55abb4971
+    layerID: 17
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: boing_background Texture
+  prefabAssetName: boing_background Prefab
+  spriteLibAssetName: boing_background Sprite Lib
+  secondarySpriteTextures: []

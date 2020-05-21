@@ -17,6 +17,7 @@ public class playerJumpImproved : MonoBehaviour
     {
         physicsThingy = GetComponent<Rigidbody2D>();
         characterAnimator = GetComponent<Animator>();
+        characterAnimator.SetBool("Grounded", false);
 
     }
 
@@ -73,5 +74,16 @@ public class playerJumpImproved : MonoBehaviour
             //Debug.Log("the ground thing says NO");
         }
 
+
+    }
+
+    void OnCollisionStay2D(Collision2D collider)
+    {
+        characterAnimator.SetBool("Grounded", true);
+    }
+
+    void OnCollisionExit2D(Collision2D collider)
+    {
+        characterAnimator.SetBool("Grounded", false);
     }
 }
