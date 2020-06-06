@@ -11,7 +11,8 @@ public class Pause : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-
+  	isPaused = false;
+  	pauseMenu.SetActive(false);
   }
   // Update is called once per frame
   void Update()
@@ -22,7 +23,7 @@ public class Pause : MonoBehaviour
       }else{
         isPaused = true;
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
       }
     }
   }

@@ -1,4 +1,4 @@
-name: Merge
+name: Merge&Build
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
 
-  build:
+  merge:
 
     runs-on: windows-latest
 
@@ -76,3 +76,56 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+
+  build:
+
+    needs: merge
+
+    runs-on: unity
+
+    steps:
+      - name: Declare some variables
+        id: vars
+        shell: bash
+        run: |
+          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+          ref: develop
+
+      - uses: actions/cache@v1.1.0
+        with:
+          path: /Library
+          key: ${{ runner.os }}
+          restore-keys: ${{ runner.os }}
+
+      - uses: webbertakken/unity-builder@v1.0
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          unityVersion: 2019.3.13f1
+          targetPlatform: StandaloneWindows64
+          buildName: Boing_Commit_${{ steps.vars.outputs.sha_short }}
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Build
+          path: build
+
+      - name: Zip Files
+        run: cd build && zip -qq -r ../build.zip StandaloneWindows64/
+
+      - name: Rename Zip Files
+        run: mv build.zip "Boing_Build_${{ github.run_number }}_Commit_${{ steps.vars.outputs.sha_short }}.zip"
+
+      - name: Upload to Google Drive
+        uses: satackey/action-google-drive@v1
+        with:
+          skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
+          upload-from: "Boing_Build_${{ github.run_number }}_Commit_${{ steps.vars.outputs.sha_short }}.zip"
+          upload-to: Boing/Builds
+          google-client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
+          google-client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
